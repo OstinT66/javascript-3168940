@@ -1,0 +1,42 @@
+.img1{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen1{
+    height: 600px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+button{
+    padding: 15px;
+    border-radius: 15px;
+    border: solid 1px;
+    background-color: #8A2BE2;
+    color: white;
+    
+}
+
+button:hover{
+    background-color: #8B008B;
+    color: white;
+}
+
+.bn{
+    filter: grayscale(100%);
+}
+
+.desenfocar{
+    filter: blur(10px);
+}
+
+.rot{
+    transform: rotate(10deg) scale(1.2);
+}
