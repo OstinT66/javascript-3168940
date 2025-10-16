@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.escenario{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    left: 30%;
+    border-radius: 20px;
+}
