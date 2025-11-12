@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 60px;
+}
+
+/* Escenario */
+.escenario {
+  position: relative;
+  width: 750px;
+  height: 500px;
+  overflow: hidden;
+  border: 2px solid #222;
+}
+
+/* Fondo */
+.fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Cabeza */
+.cabeza {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.cabeza img {
+  width: 320px;
+  height: auto;
+  display: block;
+}
+
+/* Animación de flotación */
+.cabeza {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: flotar 5s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-15px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+}
+
+
+
+/* Ojo rojo */
+.ojo {
+  position: absolute;
+  top: calc(50% - 110px);
+  left: calc(50% + 100px);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: orbita 6s ease-in-out infinite alternate;
+}
+
+.ojo img {
+  width: 130px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8));
+}
+
+/* 🌕 Animación elíptica con balanceo */
+@keyframes orbita {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(60px) translateY(-10px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(3deg) translateX(80px) translateY(15px) rotate(-3deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-3deg) translateX(60px) translateY(-10px) rotate(3deg);
+  }
+}
+
+
+/* ---------------- ESCENARIO 2 -------------------- */
+.escenario_2 {
+  position: relative;
+  border-radius: 20px;
+  width: 750px;
+  height: 500px;
+  overflow: hidden;
+  border: 2px solid #222;
+  margin-top: 60px; /* separación con el primer escenario */
+}
+
+/* Fondo del nuevo escenario */
+.escenario_2 .fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  image-rendering: pixelated;
+  filter: brightness(0.8) contrast(1.2);
+}
+
+/* Assets del nuevo escenario */
+.escenario_2 .asset {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.escenario_2 .asset:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+.escenario_2 .asset img {
+  width: 100px;
+  height: auto;
+}
+
+.escenario_2 .asset-1 img{
+  width: 120px;
+}
+
+.escenario_2 .asset-3 img{
+  width: 70px;
+}
+
+.escenario_2 .asset-2 img {
+  width: 130px;
+
+}
+
+.escenario_2 .asset-1:hover {
+  transform: scale(2);
+  filter: drop-shadow(0 0 10px yellow);
+}
+
+
+.asset-1 {
+  position: absolute;
+  top: 68%;
+  left: 17%;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px white);
+  animation: mover 1s ease-in-out infinite alternate;
+}
+
+.asset-2 {
+  position: absolute;
+  top: 68%;
+  left: calc(50% + 200px); 
+  z-index: 2;
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8));
+  animation: salto 3s ease-in-out infinite;
+}
+
+.asset-3 {
+  position: absolute;
+  top: 45%;
+  left: calc(50% + 200px); 
+  width: 90px;
+  z-index: 2;
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8));
+  animation: salto 3s ease-in-out infinite;
+}
+
+.asset-4 {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px white);
+}
+
+@keyframes mover{
+  0%{ transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+
+@keyframes salto {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
+}
+
+/* ----------- CONTADOR ESCENARIO 2 ----------- */
+.escenario_2 .contador {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.6); /* fondo semitransparente */
+  color: #fff;
+  font-family: 'Press Start 2P', cursive; /* fuente tipo pixel art */
+  font-size: 14px;
+  padding: 8px 12px;
+  border: 2px solid #ff0000;
+  border-radius: 6px;
+  text-shadow: 0 0 4px red;
+  z-index: 3;
+}
+
+/* ----------- MINIATURAS SIGUIENTES ESCENARIOS ----------- */
+.miniaturas {
+  display: flex;
+  gap: 15px;
+} 
+.sgt {
+  width: 100px;
+  height: 70px;
+  border: 2px solid #222;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.sgt.active, .sgt:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.min1 {
+  background-image: url('./imagenes/escenario.jpg');
+}
+.min2 {
+  background-image: url('./imagenes/escenario_2.jpg');
+}
+
+
+
+/* --------- Btones de navegación --------- */
+.btns {
+  display: flex;
+  gap: 20px;
+} 
+.btns button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #555;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btns button:hover {
+  background-color: #555;
+  border-color: #fff;
+}
+
+.escena{display: none;}
+.activa{display: block;}
+
