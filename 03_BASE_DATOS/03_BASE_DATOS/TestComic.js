@@ -11,9 +11,11 @@ infocomic.innerHTML = `
  */
 const hero = document.querySelector(".hero");
 
+const personajes = document.querySelector(".card-personajes");
+
 console.log(hero);
 
-hero.innerHTML = `
+/* hero.innerHTML = `
           <h1>${comic.nombreComic}</h1>
           <p>${comic.sinopsis}</p>
           <div class="actions">
@@ -22,3 +24,16 @@ hero.innerHTML = `
           </div>
           <p>${comic.year}</strong></p>
           `
+ */
+
+console.log(comic.personaje);
+
+comic.personajes.forEach( char => {
+  console.log(char.nombre);
+  document.body.innerHTML += `<img src="${char.imagen}" alt="${char.nombre}"/> width="200" height="300"`;
+
+  });
+
+  const div = document.createElement("div");
+  div.classList.add("card-personajes");
+

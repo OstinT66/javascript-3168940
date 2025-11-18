@@ -6,6 +6,24 @@ let comic = {
     "Se narra el viaje espiritual y artístico de Elkin, un joven músico que lucha contra las injusticias y la censura en una sociedad dividida. A su lado, la Sombra y el Cuervo representan las voces internas del miedo y la libertad. Juntos encarnan la resistencia del arte frente al poder.",
   autores: ["Sebastián Acevedo González", "Ostin"],
   "year": 2025,
+  personajes: [
+    {
+      nombre: "Elkin",
+      descripcion: "lorem lorem lorem lorem lorem",
+      imagen: "url_de_imagen_elkin.jpg",
+    },
+    {
+      nombre: "La Sombra",
+      descripcion: "lorem lorem lorem lorem lorem",
+      imagen: "url_de_imagen_sombra.jpg",
+    },
+    {
+      nombre: "El Cuervo",
+      descripcion: "lorem lorem lorem lorem lorem",
+      imagen: "url_de_imagen_cuervo.jpg",
+    },
+  ],
+  
   descripcion:
     "Cómic digital interactivo inspirado en la historia de Elkin Ramírez y el legado simbólico de Kraken. Combina arte visual, narrativa transmedia y elementos musicales para conectar a nuevas generaciones con el espíritu del rock colombiano.",
   capitulos: [
