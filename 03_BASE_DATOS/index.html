@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Comic Interactivo - versión estudiante</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="headerup">
     <div class="wrap headerup-inner">
 
-      <a class="brand" href="#">Comic</a>
+      <a class="logo" href="#">Comic</a>
       <nav class="nav" aria-label="Navegación principal">
         <a class="nav-link" href="#hero">Inicio</a>
         <a class="nav-link" href="#characters">Personajes</a>
@@ -33,11 +35,11 @@
           <p class="meta">Premiere: <strong>June 16, 2019</strong></p>
         </div>
 
-          <!-- portada -->
-          <div class="cover">
-            <img src="" alt="Portada (placeholder)" class="cover-img" />
-            <span class="cover-label">PORTADA</span>
-          </div>
+        <!-- portada -->
+        <div class="portada">
+          <img src="" alt="Portada" class="cover-img" />
+          <span class="cover-label">PORTADA</span>
+        </div>
       </div>
     </section>
 
@@ -46,20 +48,26 @@
       <div class="wrap">
         <h2 class="section-title">Personajes</h2>
         <div class="list scroll-x js-carousel">
-          <article class="card character js-character" data-id="1">
-            <div class="avatar"></div>
-            <p class="name">Personaje 1</p>
-          </article>
 
-          <article class="card character js-character" data-id="2">
-            <div class="avatar"></div>
-            <p class="name">Personaje 2</p>
-          </article>
+          <div class="card-container">
+            <article class="card pj" data-id="1">
+              <div class="avatar"></div>
+              <img src="./imagenes/_ (1).jpeg" alt="" width="100" height="100">
+              <p class="name">Personaje 1</p>
+            </article>
 
-          <article class="card character js-character" data-id="3">
-            <div class="avatar"></div>
-            <p class="name">Personaje 3</p>
-          </article>
+            <article class="card pj" data-id="2">
+              <div class="avatar"></div>
+              <img src="./imagenes/_.jpeg" alt="" width="100" height="100">
+              <p class="name">Personaje 2</p>
+            </article>
+
+            <article class="card pj" data-id="3">
+              <div class="avatar"></div>
+              <img src="./imagenes/Eoli Studio Shop _ Redbubble.jpeg" alt="" width="100" height="100">
+              <p class="name">Personaje 3</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -96,6 +104,9 @@
       </div>
     </section>
   </main>
-  
+
+  <script src="bd.js"></script>
+  <script src="./TestComic.js"></script>
 </body>
+
 </html>

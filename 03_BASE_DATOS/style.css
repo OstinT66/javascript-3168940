@@ -37,7 +37,7 @@ body{
     justify-content:space-between
 }
 
-.brand{
+.logo{
     color:var(--accent);
     font-weight:bold;
     text-decoration:none
@@ -102,8 +102,7 @@ body{
 }
 
 
-/* cover */
-.cover{
+.portada{
     width:340px;
     height:210px;
     background:linear-gradient(180deg,#2a0036,#0d0018);
@@ -117,22 +116,16 @@ body{
     height:100%;object-fit:cover;
     border-radius:8px;opacity:0.9
 }
-.cover-label{
-    position:absolute;
-    color:var(--muted);
-    font-weight:bold
-}
 
-/* sections */
 .section{
-    padding:28px 0
+    padding:30px 0
 }
 .section-title{
     color:#9fe6ff;
     margin:0 0 12px 0
 }
 
-/* lists + cards (simple scroll) */
+
 .list{
     display:flex;
     gap:12px;
@@ -159,11 +152,13 @@ body{
     flex:0 0 auto
 }
 
-.character .avatar{
+/* personaje card */
+
+.pj .avatar img{
     width:80px;
     height:80px;
     border-radius:50%;
-    background:linear-gradient(90deg,var(--accent),#6fe8ff);
+    display:flex;
     margin:0 auto 8px auto
 }
 
