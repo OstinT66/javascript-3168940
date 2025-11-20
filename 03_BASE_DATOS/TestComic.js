@@ -34,16 +34,44 @@ const personajesContainer = document.querySelector(".card-container");
 
 console.log(comic.personajes);
 
+
+personajesContainer.innerHTML = "";
+
 comic.personajes.forEach( char => {
-  const div = document.createElement("article");
-  div.classList.add("card", "pj");
+  const div = document.createElement('div');
+  div.classList.add('card' );
 
   div.innerHTML = `
-            <img src="${comic.ima}" alt="" width="100" height="100">
-            <p class="name">${comic.nombre}</p>
-          </article>
+            <img src="${char.imagen}" alt="" width="100" height="100">
+            <p class="name">${char.nombre}</p>
+            <p class="description">${char.descripcion}</p>
   `
   personajesContainer.appendChild(div);
             
 
+});
+
+
+const capitulosContainer = document.querySelector(".wrap");
+console.log(comic.capitulos);
+
+capitulosContainer.innerHTML = "";
+
+comic.capitulos.forEach( cap => {
+  const div = document.createElement('div');
+  div.classList.add('card' );
+
+  div.innerHTML = `
+            <h2${cap.nombre}</h2>
+
+
+        <div class="list scroll-x">
+          <article class="card episode js-episode" data-ep="1">
+            <div class="ep-info">
+              <img src="${cap.portada}" alt="" width="100" height="100">
+              <h3>Capítulo 1</h3>
+              <p>${cap.descripcion}/p>
+            </div>
+  `
+  capitulosContainer.appendChild(div);
 });

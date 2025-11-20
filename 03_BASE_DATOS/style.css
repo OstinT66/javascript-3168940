@@ -122,13 +122,15 @@ body{
 }
 .section-title{
     color:#9fe6ff;
-    margin:0 0 12px 0
+    margin-bottom: 40px;
 }
 
 
 .list{
     display:flex;
-    gap:12px;
+    gap:10px;
+    min-width:300px;
+    align-items:center;
     overflow-x:auto;
     padding-bottom:8px
 }
@@ -144,23 +146,35 @@ body{
 
 
 /* card base */
-.card{
-    background:var(--card);
+.card .name{
     padding:10px;
     border-radius:8px;
     min-width:160px;
-    flex:0 0 auto
+
+}
+
+.card .description{
+    padding:0 10px 10px 10px;
+    font-size:13px;
+    text-align:center
 }
 
 /* personaje card */
 
-.pj .avatar img{
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    display:flex;
-    margin:0 auto 8px auto
+.card img{
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
 }
+
+.card-container{
+    display:flex;
+    gap:10px;
+    min-width:300px;
+    align-items:center
+}
+
+
 
 .name{
     text-align:center;

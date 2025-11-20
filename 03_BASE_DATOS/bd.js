@@ -31,7 +31,7 @@ let comic = {
       id: 1,
       nombre: "El origen",
       personajes: ["Elkin", "La Sombra", "El Cuervo"],
-      portada: "url_de_portada_origen.jpg",
+      portada: "./imagenes/cp1.jpeg",
       descripcion:
         "Elkin descubre su voz interior en medio del caos universitario. Entre dudas, sueños y rebeldía, nace la chispa de lo que se convertirá en una revolución musical.",
     },
@@ -45,7 +45,7 @@ let comic = {
         "Autoridades",
         "Multitud",
       ],
-      portada: "url_de_portada_batalla.jpg",
+      portada: "./imagenes/cp2.jpeg",
       descripcion:
         "La banda enfrenta la represión del sistema. Entre protestas, discursos y guitarras encendidas, Elkin debe decidir entre la fama o la verdad.",
     },
@@ -53,7 +53,7 @@ let comic = {
       id: 3,
       nombre: "El legado",
       personajes: ["Elkin", "La Sombra", "El Cuervo", "Nueva Generación"],
-      portada: "url_de_portada_legado.jpg",
+      portada: "./imagenes/cp3.jpeg",
       descripcion:
         "Elkin deja su mensaje para una nueva generación: el arte como resistencia y la voz como símbolo eterno. El espíritu de Arkana se convierte en inmortal.",
     },
