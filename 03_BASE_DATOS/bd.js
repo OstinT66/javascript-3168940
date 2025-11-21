@@ -10,17 +10,17 @@ let comic = {
     {
       nombre: "Elkin",
       descripcion: "lorem lorem lorem lorem lorem",
-      imagen: "./imagenes/_ (1).jpeg",
+      imagen: "imagenes/pj1.jpg",
     },
     {
       nombre: "La Sombra",
       descripcion: "lorem lorem lorem lorem lorem",
-      imagen: "./imagenes/_.jpeg",
+      imagen: "imagenes/pj2.jpg",
     },
     {
       nombre: "El Cuervo",
       descripcion: "lorem lorem lorem lorem lorem",
-      imagen: "./imagenes/Eoli Studio Shop _ Redbubble.jpeg",
+      imagen: "imagenes/pj33.jpg",
     },
   ],
   
@@ -31,7 +31,7 @@ let comic = {
       id: 1,
       nombre: "El origen",
       personajes: ["Elkin", "La Sombra", "El Cuervo"],
-      portada: "./imagenes/cp1.jpeg",
+      portada: "/imagenes/cap1.jpg",
       descripcion:
         "Elkin descubre su voz interior en medio del caos universitario. Entre dudas, sueños y rebeldía, nace la chispa de lo que se convertirá en una revolución musical.",
     },
@@ -45,7 +45,7 @@ let comic = {
         "Autoridades",
         "Multitud",
       ],
-      portada: "./imagenes/cp2.jpeg",
+      portada: "/imagenes/cap2.jpg",
       descripcion:
         "La banda enfrenta la represión del sistema. Entre protestas, discursos y guitarras encendidas, Elkin debe decidir entre la fama o la verdad.",
     },
@@ -53,11 +53,9 @@ let comic = {
       id: 3,
       nombre: "El legado",
       personajes: ["Elkin", "La Sombra", "El Cuervo", "Nueva Generación"],
-      portada: "./imagenes/cp3.jpeg",
+      portada: "/imagenes/cap3.jpg",
       descripcion:
         "Elkin deja su mensaje para una nueva generación: el arte como resistencia y la voz como símbolo eterno. El espíritu de Arkana se convierte en inmortal.",
     },
   ],
 };
-
-

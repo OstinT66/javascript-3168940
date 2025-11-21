@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Comic Interactivo - versión estudiante</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="headerup">
-    <div class="wrap headerup-inner">
-
-      <a class="logo" href="#">Comic</a>
-      <nav class="nav" aria-label="Navegación principal">
-        <a class="nav-link" href="#hero">Inicio</a>
-        <a class="nav-link" href="#characters">Personajes</a>
-        <a class="nav-link" href="#episodes">Capítulos</a>
-      </nav>
+    
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">MI COMIC</div>
+        <div class="botones">
+            <button>HD</button>
+            <button>MENU</button>
+        </div>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="wrap hero-inner">
-        <div class="hero-left">
-          <h1 class="title">La voz del silencio</h1>
-          <p class="subtitle">Una frase corta para describir el cómic.</p>
-          <div class="actions">
-            <button class="btn btn-primary js-start">Comenzar</button>
-            <a class="btn btn-ghost" href="#episodes">Watch</a>
-          </div>
-          <p class="meta">Premiere: <strong>June 16, 2019</strong></p>
+    <!-- Seccion principal -->
+    <div class="principal">
+        <h1 class="titulo-grande">TITULO DEL COMIC</h1>
+        <p class="descripcion">
+            Esta es la historia de un heroe que debe salvar el mundo de una gran amenaza. 
+            Acompañado de sus aliados, enfrentara muchos desafios.
+        </p>
+        <div>
+            <span class="fecha">01</span>
+            <span style="font-size: 20px;">CAPITULO</span>
         </div>
 
-        <!-- portada -->
-        <div class="portada">
-          <img src="" alt="Portada" class="cover-img" />
-          <span class="cover-label">PORTADA</span>
+        <!-- Mini capitulos -->
+        <div class="mini-capitulos">
+            <div class="mini-cap">
+                <div class="mini-cap-img">01</div>
+                <div style="margin-top: 5px;">El Comienzo</div>
+            </div>
+
+            <div class="mini-cap">
+                <div class="mini-cap-img">02</div>
+                <div style="margin-top: 5px;">El Viaje</div>
+            </div>
+
+            <div class="mini-cap">
+                <div class="mini-cap-img">03</div>
+                <div style="margin-top: 5px;">El Final</div>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
 
-    <!-- PERSONAJES -->
-    <section id="characters" class="section">
-      <div class="wrap">
-        <h2 class="section-title">Personajes</h2>
-        <div class="list scroll-x js-carousel">
+    <!-- Contenedor principal -->
+    <div class="contenedor">
 
-          <div class="card-container">
-            <div class="card-pj" data-id="1">
-              <img src="./imagenes/_ (1).jpeg" alt="" width="100" height="100">
-              <p class="name">Personaje 1</p>
+        <!-- Seccion Capitulos -->
+        <h2>Capítulos</h2>
+        <div class="capitulos">
+            <div class="capitulo">
+                <div class="cap-imagen" img src="./imagenes/cap1.jpg">01</div>
+                <div class="cap-info">
+                    <div class="cap-numero">CAPITULO 01</div>
+                    <div class="cap-titulo">El Comienzo</div>
+                    <p>Aqui empieza todo. El heroe descubre su destino y debe tomar una decision importante.</p>
+                </div>
             </div>
 
-            <article class="card-pj" data-id="2">
-              <div class="avatar"></div>
-              <img src="./imagenes/_.jpeg" alt="" width="100" height="100">
-              <p class="name">Personaje 2</p>
-            </article>
+            <div class="capitulo">
+                <div class="cap-imagen">02</div>
+                <div class="cap-info">
+                    <div class="cap-numero">CAPITULO 02</div>
+                    <div class="cap-titulo">El Viaje</div>
+                    <p>Nuestro heroe inicia su viaje y conoce a sus companeros de aventura.</p>
+                </div>
+            </div>
 
-            <article class="card-pj" data-id="3">
-              <div class="avatar"></div>
-              <img src="./imagenes/Eoli Studio Shop _ Redbubble.jpeg" alt="" width="100" height="100">
-              <p class="name">Personaje 3</p>
-            </article>
-          </div>
+            <div class="capitulo">
+                <div class="cap-imagen">03</div>
+                <div class="cap-info">
+                    <div class="cap-numero">CAPITULO 03</div>
+                    <div class="cap-titulo">El Final</div>
+                    <p>La batalla final ha llegado. El destino del mundo esta en juego.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
 
-    <!-- CAPÍTULOS -->
-    <section id="episodes" class="section">
-      <div class="wrap">
-        <h2 class="section-title">Capítulos</h2>
-
-
-        <div class="list scroll-x">
-          <article class="card episode js-episode" data-ep="1">
-            <div class="ep-info">
-              <img src="./imagenes/cp1.jpeg" alt="" width="100" height="100">
-              <h3>Capítulo 1</h3>
-              <p>Descripción corta</p>
+        <!-- Seccion Personajes -->
+        <h2>Personajes</h2>
+        <div class="personajes">
+            <div class="personaje">
+                <div class="per-imagen">🦸</div>
+                <div class="per-nombre">El Heroe</div>
+                <div class="per-rol">Protagonista</div>
             </div>
-          </article>
 
-          <article class="card episode js-episode" data-ep="2">
-            <img src="./imagenes/cp2.jpeg" alt="" width="100" height="100">
-            <div class="ep-info">
-              <h3>Capítulo 2</h3>
-              <p>Descripción corta</p>
+            <div class="personaje">
+                <div class="per-imagen">⚔️</div>
+                <div class="per-nombre">La Guerrera</div>
+                <div class="per-rol">Aliada</div>
             </div>
-          </article>
 
-          <article class="card episode js-episode" data-ep="3">
-            <img src="./imagenes/cp3.jpeg" alt="" width="100" height="100">
-            <div class="ep-info">
-              <h3>Capítulo 3</h3>
-              <p>Descripción corta</p>
+            <div class="personaje">
+                <div class="per-imagen" img src="./imagenes/cap1.jpg"></div>
+                <div class="per-nombre">El Villano</div>
+                <div class="per-rol">Antagonista</div>
             </div>
-          </article>
-
         </div>
-      </div>
-    </section>
-  </main>
 
-  <script src="bd.js"></script>
-  <script src="./TestComic.js"></script>
+    </div>
+
+    
+
+    <script src="./bd.js"></script>
+    <script src="./app.js"></script>
 </body>
-
 </html>
