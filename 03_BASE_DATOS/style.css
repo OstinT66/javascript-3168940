@@ -192,3 +192,13 @@ body {
             color: gray;
             font-size: 14px;
         }
+
+        .img-link img {
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .img-link img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }

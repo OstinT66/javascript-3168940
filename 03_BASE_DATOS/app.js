@@ -8,7 +8,7 @@ comic.personajes.forEach( char => {
     div.classList.add('personaje', 'per-nombre' );
 
     div.innerHTML = `
-                <img src="${char.imagen}" alt="${char.nombre}" class="per-imagen">
+                <a href=personajes.html><img src="${char.imagen}" alt="${char.nombre}" class="per-imagen"></a>
                 <div class="per-nombre">${char.nombre}</div>
                 <div class="per-rol">${char.descripcion}</div>
 
@@ -28,7 +28,7 @@ comic.capitulos.forEach( char => {
     const div = document.createElement ('div')
     div.classList.add('capitulo', 'cap-info', );
     div.innerHTML = `
-                    <img src="${char.portada}" alt="${char.nombre}" class="per-imagen">
+                    <a href=assets/capitulos.html> <img src="${char.portada}" alt="${char.nombre}" class="per-imagen"></a>
                     <div class="cap-numero">CAPITULO ${char.id}</div>
                     <div class="cap-titulo">${char.nombre}</div>
                     <p>${char.descripcion}</p>
@@ -46,7 +46,7 @@ comic.capitulos.forEach( char => {
     const div = document.createElement ('div')
     div.classList.add('mini-cap' );
     div.innerHTML = `
-                    <img src="${char.portada}" alt="${char.nombre}" class="mini-cap-img">
+                    <a href=assets/capitulos.html> <img src="${char.portada}" alt="${char.nombre}" class="mini-cap-img"></a>
                     <div style="margin-top: 5px;">${char.nombre}</div>
     `
     miniContainer.appendChild(div);
