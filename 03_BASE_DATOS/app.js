@@ -1,3 +1,5 @@
+import {comic} from  "./bd.js";
+
 const personajesContainer = document.querySelector(".personajes")
 console.log(comic.personajes)
 
@@ -19,7 +21,7 @@ comic.personajes.forEach( char => {
 });
 
 
-capitulosContainer = document.querySelector (".capitulos")
+capitulosContainer = document.querySelector ('.capitulos')
 console.log(comic.capitulos)
 
 capitulosContainer.innerHTML = "";

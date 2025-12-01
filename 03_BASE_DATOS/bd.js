@@ -1,4 +1,4 @@
-let comic = {
+export let comic = {
   nombreComic: "El eco eterno",
   numeroCapitulos: 3,
   genero: "biográfico, drama épico",
