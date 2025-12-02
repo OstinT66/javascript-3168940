@@ -10,9 +10,11 @@ comic.personajes.forEach( char => {
     div.classList.add('personaje', 'per-nombre' );
 
     div.innerHTML = `
-                <a href=personajes.html><img src="${char.imagen}" alt="${char.nombre}" class="per-imagen"></a>
+                <a href="personajes.html?id=${char.id}">
+                <img src="${char.imagen}" alt="${char.nombre}" class="per-imagen">
                 <div class="per-nombre">${char.nombre}</div>
                 <div class="per-rol">${char.descripcion}</div>
+                </a>
 
     `
     personajesContainer.appendChild(div);
@@ -30,10 +32,12 @@ comic.capitulos.forEach( char => {
     const div = document.createElement ('div')
     div.classList.add('capitulo', 'cap-info', );
     div.innerHTML = `
-                    <a href=assets/capitulos.html> <img src="${char.portada}" alt="${char.nombre}" class="per-imagen"></a>
+                    <a href=assets/capitulos.html?id=${char.id}>
+                    <img src="${char.portada}" alt="${char.nombre}" class="per-imagen">
                     <div class="cap-numero">CAPITULO ${char.id}</div>
                     <div class="cap-titulo">${char.nombre}</div>
                     <p>${char.descripcion}</p>
+                    </a>
               
     `
     capitulosContainer.appendChild(div);

@@ -202,3 +202,8 @@ body {
             transform: scale(1.05);
             opacity: 0.9;
         }
+
+        .personajes a{
+            text-decoration: none;
+            color: white;
+        }
