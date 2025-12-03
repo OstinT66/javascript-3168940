@@ -15,8 +15,8 @@ personajeDetalle.innerHTML = `
 <div class="personaje-detalle">
 
         <div class="header">
-            <!-- <div class="logo">MI COMIC</div>
-        <a href="index.html"><button class="boton-volver">← VOLVER</button></a> -->
+             <div class="logo">MI COMIC</div>
+        <a href="index.html"><button class="boton-volver">← VOLVER</button></a>
         </div>
 
         <!-- Banner del personaje -->

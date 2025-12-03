@@ -23,7 +23,7 @@ comic.personajes.forEach( char => {
 });
 
 
-capitulosContainer = document.querySelector ('.capitulos')
+const capitulosContainer = document.querySelector (".capitulos")
 console.log(comic.capitulos)
 
 capitulosContainer.innerHTML = "";
@@ -32,7 +32,7 @@ comic.capitulos.forEach( char => {
     const div = document.createElement ('div')
     div.classList.add('capitulo', 'cap-info', );
     div.innerHTML = `
-                    <a href=assets/capitulos.html?id=${char.id}>
+                    <a href="capitulos.html?id=${char.id}">
                     <img src="${char.portada}" alt="${char.nombre}" class="per-imagen">
                     <div class="cap-numero">CAPITULO ${char.id}</div>
                     <div class="cap-titulo">${char.nombre}</div>
@@ -52,8 +52,19 @@ comic.capitulos.forEach( char => {
     const div = document.createElement ('div')
     div.classList.add('mini-cap' );
     div.innerHTML = `
-                    <a href=assets/capitulos.html> <img src="${char.portada}" alt="${char.nombre}" class="mini-cap-img"></a>
+                    <a href="capitulos.html?id=${char.id}">
+                    <img src="${char.portada}" alt="${char.nombre}" class="mini-cap-img">
                     <div style="margin-top: 5px;">${char.nombre}</div>
+                    </a>
     `
     miniContainer.appendChild(div);
 });
+
+const tPrincipal = document.querySelector ('.principal');
+console.log(tPrincipal);
+
+tPrincipal.innerHTML = `
+<h1 class="titulo-grande">${comic.nombreComic}</h1>
+            <p class="descripcion">${comic.descripcion}</p>
+
+`
