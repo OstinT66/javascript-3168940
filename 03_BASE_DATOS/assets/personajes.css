@@ -1,0 +1,154 @@
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+        }
+
+        /* Header */
+        .header {
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .boton-volver {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Banner del personaje */
+        .banner-personaje {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #1a1a2e;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+            gap: 40px;
+        }
+
+        .imagen-personaje {
+            width: 300px;
+            height: 350px;
+            background-color: #3a4f6f;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+        }
+
+        .info-banner {
+            flex: 1;
+        }
+
+        .nombre-personaje {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rol-personaje {
+            font-size: 24px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .descripcion-corta {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        /* Contenedor de informacion */
+        .contenedor-info {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .seccion {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .texto-info {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        /* Caracteristicas */
+        .caracteristicas {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .caracteristica {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .caracteristica-titulo {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .caracteristica-valor {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Habilidades */
+        .habilidades {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .habilidad {
+            background-color: #2a3f5f;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        /* Galeria */
+        .galeria {
+            display: flex;
+            gap: 15px;
+        }
+
+        .imagen-galeria {
+            width: 200px;
+            height: 200px;
+            background-color: #2a3f5f;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+    
