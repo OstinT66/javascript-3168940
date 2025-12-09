@@ -37,20 +37,16 @@ export let comic = {
       "portada": "/imagenes/cap1.jpg",
       "descripcion":
         "Elkin descubre su voz interior en medio del caos universitario. Entre dudas, sueños y rebeldía, nace la chispa de lo que se convertirá en una revolución musical.",
+        "sinopsis": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
     },
     {
       "id": 2,
       "nombre": "La batalla",
-      "personajes": [
-        "Elkin",
-        "La Sombra",
-        "El Cuervo",
-        "Autoridades",
-        "Multitud",
-      ],
+      "personajes": ["Elkin", "La Sombra", "El Cuervo" , "autoridades" , "multitud"],
       "portada": "/imagenes/cap2.jpg",
       "descripcion":
         "La banda enfrenta la represión del sistema. Entre protestas, discursos y guitarras encendidas, Elkin debe decidir entre la fama o la verdad.",
+        "sinopsis": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
     },
     {
       "id": 3,
@@ -59,6 +55,12 @@ export let comic = {
       "portada": "/imagenes/cap3.jpg",
       "descripcion":
         "Elkin deja su mensaje para una nueva generación: el arte como resistencia y la voz como símbolo eterno. El espíritu de Arkana se convierte en inmortal.",
+        "sinopsis": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
     },
+  ],
+  "carrusel": [
+    "./imagenes/car_1.jpeg",
+    "./imagenes/car_2.jpeg",
+    "./imagenes/car_3.jpeg",
   ],
 };
