@@ -7,7 +7,22 @@ const id = parseInt(params.get('id'));
 const personaje = comic.personajes.find(p => p.id === id);
 
 
+
+
+
 const personajeDetalle = document.querySelector ('.personaje-detalle');
+
+if (!personaje) {
+    personajeDetalle.innerHTML = `
+        <div style="text-align:center; padding:120px 20px; color:#ccc; background:#0008;">
+            <h1>Ups... Personaje no encontrado</h1>
+            <p>Volverás al inicio en 3 segundos</p>
+        </div>
+    `;
+    setTimeout(() => {
+        window.location.href = "/index.html";
+    }, 3000);
+}
 
 console.log(personajeDetalle);
 personajeDetalle.innerHTML = `
@@ -36,10 +51,7 @@ personajeDetalle.innerHTML = `
             <div class="seccion">
                 <h2>Historia</h2>
                 <p class="texto-info">
-                    Aquí va la historia completa del personaje. Puedes contar sobre su origen,
-                    cómo llegó a ser quien es ahora, los eventos importantes en su vida, y cómo
-                    se conecta con la trama principal del comic. Esta sección puede ser tan larga
-                    como necesites para desarrollar completamente el trasfondo del personaje.
+                    ${personaje.historia}
                 </p>
             </div>
 
@@ -49,19 +61,19 @@ personajeDetalle.innerHTML = `
                 <div class="caracteristicas">
                     <div class="caracteristica">
                         <div class="caracteristica-titulo">EDAD</div>
-                        <div class="caracteristica-valor">25 años</div>
+                        <div class="caracteristica-valor">${personaje.edad}</div>
                     </div>
                     <div class="caracteristica">
                         <div class="caracteristica-titulo">ALTURA</div>
-                        <div class="caracteristica-valor">1.80 m</div>
+                        <div class="caracteristica-valor">${personaje.altura}</div>
                     </div>
                     <div class="caracteristica">
                         <div class="caracteristica-titulo">OCUPACIÓN</div>
-                        <div class="caracteristica-valor">Héroe</div>
+                        <div class="caracteristica-valor">${personaje.ocupacion}</div>
                     </div>
                     <div class="caracteristica">
                         <div class="caracteristica-titulo">ORIGEN</div>
-                        <div class="caracteristica-valor">Ciudad X</div>
+                        <div class="caracteristica-valor">${personaje.origen}</div>
                     </div>
                 </div>
             </div>
@@ -82,19 +94,7 @@ personajeDetalle.innerHTML = `
             <div class="seccion">
                 <h2>Personalidad</h2>
                 <p class="texto-info">
-                    Describe la personalidad del personaje. ¿Cómo se comporta? ¿Qué lo motiva?
-                    ¿Cuáles son sus valores? ¿Tiene miedos o debilidades emocionales? Esta sección
-                    ayuda a hacer al personaje más humano y relatable para los lectores.
-                </p>
-            </div>
-
-            <!-- Relaciones -->
-            <div class="seccion">
-                <h2>Relaciones</h2>
-                <p class="texto-info">
-                    Aquí puedes describir las relaciones del personaje con otros personajes del comic.
-                    ¿Quiénes son sus aliados? ¿Tiene enemigos? ¿Hay alguien especial en su vida?
-                    Las relaciones son importantes para el desarrollo de la historia.
+                    ${personaje.personalidad}
                 </p>
             </div>
 
@@ -102,9 +102,6 @@ personajeDetalle.innerHTML = `
             <div class="seccion">
                 <h2>Galería</h2>
                 <div class="galeria">
-                    <div class="imagen-galeria"></div>
-                    <div class="imagen-galeria"></div>
-                    <div class="imagen-galeria"></div>
                     <div class="imagen-galeria"></div>
                 </div>
             </div>
@@ -116,3 +113,4 @@ personajeDetalle.innerHTML = `
 
 
 `
+

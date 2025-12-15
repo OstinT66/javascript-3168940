@@ -5,27 +5,48 @@ const id = parseInt(params.get('id'));
 
 const capitulo = comic.capitulos.find(p => p.id === id);
 
-const capDetalle = document.querySelector ('.banner-capitulo');
+const capDetalle = document.querySelector ('.contPrincipal');
 
 console.log(capDetalle);
 
-capDetalle.innerHTML = `
-    <h4 class="numero-capitulo">CAPÍTULO ${capitulo.id}</h4>
-        <h1 class="titulo-capitulo">${capitulo.nombre}</h1>
-        <p class="resumen-capitulo">${capitulo.descripcion}</p>
-        <button class="boton-leer">LEER AHORA</button>
-`
-const contPrincipal = document.querySelector ('.contenedor-cap');
+if (!capitulo) {
+    capDetalle.innerHTML = `
+        <div style="text-align:center; padding:120px 20px; color:#ccc; background:#0008;">
+            <h1>Ups... capitulo no encontrado</h1>
+            <p>Volverás al inicio en 3 segundos</p>
+        </div>
+    `;
+    setTimeout(() => {
+        window.location.href = "/index.html";
+    }, 3000);
+}
 
-contPrincipal.innerHTML = `
-<div class="seccion">
+capDetalle.innerHTML = `
+
+    <div class="header">
+        <div class="logo">MI COMIC</div>
+        <a href="/index.html"><button class="boton-volver">← VOLVER</button></a>
+    </div>
+
+    <div class="banner-capitulo">
+         <h4 class="numero-capitulo">CAPÍTULO ${capitulo.id}</h4>
+        <h1 class="titulo-capitulo">${capitulo.nombre}</h1>
+        <p class="resumen-capitulo">
+            ${capitulo.descripcion}</p>
+        <button class="boton-leer">LEER AHORA</button>
+    </div>
+
+    <div class="contenedor-cap">
+
+        <!-- Sinopsis completa -->
+        <div class="seccion">
             <h2>Sinopsis</h2>
             <p class="texto-info">
                 ${capitulo.sinopsis}
-                </p>
-            
+            </p>
         </div>
 
+        <!-- Detalles -->
         <div class="seccion">
             <h2>Detalles</h2>
             <div class="detalles">
@@ -39,7 +60,7 @@ contPrincipal.innerHTML = `
                 </div>
                 <div class="detalle">
                     <div class="detalle-titulo">FECHA</div>
-                    <div class="detalle-valor">2024</div>
+                    <div class="detalle-valor">2025</div>
                 </div>
                 <div class="detalle">
                     <div class="detalle-titulo">ESTADO</div>
@@ -47,7 +68,8 @@ contPrincipal.innerHTML = `
                 </div>
             </div>
         </div>
-
+        
+        <!-- Momentos clave -->
         <div class="seccion">
             <h2>Momentos Clave</h2>
             <p class="texto-info">
@@ -59,6 +81,7 @@ contPrincipal.innerHTML = `
             </p>
         </div>
 
+        <!-- Preview de páginas -->
         <div class="seccion">
             <h2>Vista Previa</h2>
             <div class="previews">
@@ -69,6 +92,7 @@ contPrincipal.innerHTML = `
             </div>
         </div>
 
+        <!-- Navegación entre capítulos -->
         <div class="navegacion">
             <div class="nav-capitulo">
                 <div class="nav-label">← ANTERIOR</div>
@@ -79,6 +103,7 @@ contPrincipal.innerHTML = `
                 <div class="nav-titulo">Capítulo 02: El Viaje</div>
             </div>
         </div>
-`;
 
-
+    </div>
+        
+`

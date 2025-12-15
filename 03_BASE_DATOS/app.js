@@ -1,5 +1,29 @@
 import {comic} from  "./bd.js";
 
+// ===== CARRUSEL AUTOMÁTICO =====
+const principal = document.querySelector(".principal");
+let i = 0;
+const intervaloCarrusel = 4000; // Cambia cada 4 segundos
+
+function mostrarImagen(i) {
+    const imagenUrl = comic.carrusel[i].imagen;
+    principal.style.backgroundImage = `url('${imagenUrl}')`;
+}
+
+function avanzarCarrusel() {
+    i = (i + 1) % comic.carrusel.length;
+    mostrarImagen(i);
+}
+
+// Mostrar primera imagen
+mostrarImagen(i);
+
+// Cambiar imagen automáticamente
+setInterval(avanzarCarrusel, intervaloCarrusel);
+// ===== FIN CARRUSEL AUTOMÁTICO =====
+
+// ===== SECCIÓN PERSONAJES  ===== //
+
 const personajesContainer = document.querySelector(".personajes")
 console.log(comic.personajes)
 
@@ -18,10 +42,11 @@ comic.personajes.forEach( char => {
 
     `
     personajesContainer.appendChild(div);
-
-
 });
+// ===== FIN SECCIÓN PERSONAJES  ===== //
 
+
+// ===== SECCIÓN CAPÍTULOS  ===== //
 
 const capitulosContainer = document.querySelector (".capitulos")
 console.log(comic.capitulos)
@@ -43,6 +68,10 @@ comic.capitulos.forEach( char => {
     capitulosContainer.appendChild(div);
 });
 
+// ===== FIN SECCIÓN CAPÍTULOS  ===== //
+
+
+// ===== SECCIÓN MINI CAPÍTULOS  ===== //
 
 const miniContainer = document.querySelector(".mini-capitulos")
 
@@ -60,11 +89,20 @@ comic.capitulos.forEach( char => {
     miniContainer.appendChild(div);
 });
 
+// ===== FIN SECCIÓN MINI CAPÍTULOS  ===== //
+
+
 const tPrincipal = document.querySelector ('.principal');
 console.log(tPrincipal);
 
+
 tPrincipal.innerHTML = `
 <h1 class="titulo-grande">${comic.nombreComic}</h1>
-            <p class="descripcion">${comic.descripcion}</p>
+            <p class="descripcion">${comic.sinopsis}</p>
 
 `
+
+
+
+
+
