@@ -55,7 +55,7 @@ export let comic = {
       "id": 1,
       "nombre": "El origen",
       "personajes": ["Elkin", "La Sombra", "El Cuervo"],
-      "portada": "/imagenes/cap1.jpg",
+      "portada": "./imagenes/cap1.jpg",
       "descripcion":
       "Elkin descubre su voz interior en medio del caos universitario. Entre dudas, sueños y rebeldía, nace la chispa de lo que se convertirá en una revolución musical.",
       "sinopsis": "En las aulas universitarias, entre libros olvidados y pasillos silenciosos, Elkin descubre que su guitarra es más que un instrumento: es su voz. La Sombra lo acecha con preguntas tortuosas, cuestionando si un joven músico puede realmente cambiar algo en un mundo tan corrupto. Pero entonces aparece El Cuervo, volando entre las sombras de la noche, susurrando historias de rebelión y libertad. En este primer capítulo, Elkin toma una decisión que lo marcará para siempre: transformar su dolor en arte, su miedo en música. Nace así el grito que sacudirá los cimientos de una ciudad dormida."
@@ -71,7 +71,7 @@ export let comic = {
         "Autoridades",
         "Multitud",
       ],
-      "portada": "/imagenes/cap2.jpg",
+      "portada": "./imagenes/cap2.jpg",
       "descripcion":
         "La banda enfrenta la represión del sistema. Entre protestas, discursos y guitarras encendidas, Elkin debe decidir entre la fama o la verdad.",
       "sinopsis": "Los conciertos clandestinos se multiplican. Las calles se llenan de voces jóvenes, de guitarras encendidas, de esperanza. Pero el sistema no permanece indiferente. Las autoridades cierran espacios, persiguen a músicos, censuran canciones. Elkin se enfrenta a su prueba más dura: continuar o rendirse. La Sombra lo tienta con promesas de seguridad si solo calla. El Cuervo lo provoca a ir más allá, a desafiar aún más. En las calles llenas de manifestantes, rodeado de uniformes represivos, Elkin debe elegir entre ser famoso y ser verdadero. Entre aplausos vacíos o un silencio incómodo pero honesto. La batalla es tanto interna como externa, y cada canción es un acto de guerra contra la injusticia."
@@ -80,7 +80,7 @@ export let comic = {
       "id": 3,
       "nombre": "El legado",
       "personajes": ["Elkin", "La Sombra", "El Cuervo", "Nueva Generación"],
-      "portada": "/imagenes/cap3.jpg",
+      "portada": "./imagenes/cap3.jpg",
       "descripcion":
         "Elkin deja su mensaje para una nueva generación: el arte como resistencia y la voz como símbolo eterno. El espíritu de Arkana se convierte en inmortal.",
       "sinopsis": "Años después, aunque Elkin ya no está, su eco permanece. Las nuevas generaciones cantan sus canciones en las calles, en universidades, en corazones rotos. Su música se convirtió en un puente entre el pasado de represión y un futuro de libertad. La Sombra y El Cuervo ya no son voces opuestas, sino partes de un mismo mensaje: el arte es resistencia, la voz es poder, y el legado de quien se atreve a hablar nunca muere. En este capítulo final, comprendemos que la verdadera revolución no es un evento, sino un proceso, un río que fluye a través de generaciones. El espíritu de Elkin vive en cada nota rebelde, en cada grito de libertad, en cada joven que descubre que su voz importa."
