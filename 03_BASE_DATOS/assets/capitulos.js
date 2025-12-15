@@ -17,7 +17,7 @@ if (!capitulo) {
         </div>
     `;
     setTimeout(() => {
-        window.location.href = "./index.html";
+        window.location.href = "../index.html";
     }, 3000);
 }
 
@@ -25,7 +25,7 @@ capDetalle.innerHTML = `
 
     <div class="header">
         <div class="logo">MI COMIC</div>
-        <a href="./index.html"><button class="boton-volver">← VOLVER</button></a>
+        <a href="../index.html"><button class="boton-volver">← VOLVER</button></a>
     </div>
 
     <div class="banner-capitulo">
